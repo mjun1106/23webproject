@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>외국힙합</title>
+  <link rel="stylesheet" href="../css/mystyle.css">
+  <style>
+  article {
+  float: left;
+  padding: 20px;
+  box-sizing:border-box; 
+         /* 박스모델에서 박스의 크기는 기본적으로 콘텐츠의 크기만 계산(box-sizing:content-box;)
+         아래에서 넓이를 70%로 지정했는데 패딩의 크기가 20px이 있어 실제 크기는 70%를 초과하게 됨
+         box-sizing을 border-box 로 지정하면 **박스 크기 = 콘텐츠 크기+padding크기+border크기의 합**
+         패딩의 크기를 포함한 article 영역의 전체 넓이를 70%로 맞추기 위해 border-box로 지정함 */
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+  }
+  aside {
+  float: left;
+  padding: 20px; 
+  width: 30%;
+  box-sizing: border-box; 
+  background-color: green;
+  height: 600px; /* only for demonstration, should be removed */
+  }
+  </style>
+</head>
+<body>
+  <svg height="120" width="100%">
+    <!-- <defs> 요소는 그래픽 객체를 정의, <def> 요소 내에서 만든 객체는 출력되는 것은 아님
+         나중에 사용하려면 fill 속성에 참조 연결하거나 <use> 요소를 이용해야함 
+         <def> 요소 내에 선형그레디언트 정의 -->
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(0,255,255);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect fill="url(#grad1)" x="0" y="0" width="100%" height="120" />
+    <text fill="#cccccc" font-size="60" font-family="Verdana" x="50" y="80">김민준의 음악 세상</text>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+    
+  <ul>
+    <li><a class="active" href="https://mjun1106.github.io/23webproject/">Home</a></li>
+    <li><a href="./R&B.html">R&B</a></li>
+    <li><a href="./외국힙합.html">외국힙합</a></li>
+    <li><a href="./K-POP.html">K-POP</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Dropdown</a>
+      <div class="dropdown-content" >
+        <a href="https://www.apple.com/kr/apple-music">애플 뮤직</a>
+        <a href="http://www.spotify.com">스포티파이</a>
+        <a href="https://music.youtube.com">유튜브 뮤직</a>
+      </div>
+    </li>
+  </ul>
+
+  <article>
+    <h1><a href="https://youtu.be/yy1QmRIRXY8">Am i dreaming</a></h1>
+    <p><img src="../image/spider.jpg" alt="spiderman"></p>
+    <p>제가 최근에 빠진 노래중 하나인데요 이번에 스파이더맨: 어 크로스 더 유니버스 의 ost 수록 앨범 중 한 트랙입니다. </p>
+    <p>제가 좋아하는 래퍼중 한명인 metro boomin이 작사 작곡한 트랙입니다. 가사의 내용도 괜찮고 피쳐링으로 메트로 부민과 더불어 가장 좋아하는 래퍼중 한명인 asap rocky가 참여 하여 더욱 귀를 즐겁게
+    해주었습니다. 더운 날씨에 텐션을 올려줄 수 있는 노래라고 생각하여 추천드리게 되었습니다.</p>
+  </article> 
+  <aside> 
+    <img src="../image/GUITAR.jpg" alt="관련 사이트" style="max-width: 100%;"/>
+  </aside>
+ 
